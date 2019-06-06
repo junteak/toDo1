@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="-530" y="-19"/>
         </scene>
-        <!--メイン-->
+        <!--リスト-->
         <scene sceneID="tRo-zG-gts">
             <objects>
                 <tableViewController id="9ns-qS-dr9" customClass="TableViewController" customModule="toDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,7 +121,7 @@
                             <outlet property="delegate" destination="9ns-qS-dr9" id="883-yu-KKc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="メイン" id="iVZ-yR-oi6">
+                    <navigationItem key="navigationItem" title="リスト" id="iVZ-yR-oi6">
                         <barButtonItem key="rightBarButtonItem" title="追加" id="1Ey-Fx-ftJ">
                             <connections>
                                 <segue destination="qI8-2a-BW4" kind="show" id="Gmh-tf-wLf"/>
@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="136" y="-19"/>
         </scene>
-        <!--View Controller2-->
+        <!--Add Controller-->
         <scene sceneID="qad-LO-hjI">
             <objects>
-                <viewController id="qI8-2a-BW4" customClass="ViewController2" customModule="toDo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qI8-2a-BW4" customClass="AddController" customModule="toDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kua-TC-EEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

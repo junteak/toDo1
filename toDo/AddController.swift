@@ -3,7 +3,7 @@ import UIKit
 
     var word = [String]()
 
-class ViewController2: UIViewController {
+class AddController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
