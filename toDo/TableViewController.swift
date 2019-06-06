@@ -8,7 +8,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
-// 追加画面でへ追加した単語をすぐ反映するリロードコマンド
+// 追加画面でへ追加した単語をすぐ反映するリロード
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()

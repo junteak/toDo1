@@ -142,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuB-ef-5ae">
-                                <rect key="frame" x="82" y="143" width="250" height="40"/>
+                                <rect key="frame" x="82" y="99" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BYA-P5-4zC"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="PiZ-xJ-aVq"/>
@@ -157,6 +157,7 @@
                                 <state key="normal" title="追加"/>
                                 <connections>
                                     <action selector="add:" destination="qI8-2a-BW4" eventType="touchUpInside" id="XU5-rw-lIS"/>
+                                    <segue destination="9ns-qS-dr9" kind="show" id="04F-PF-YHy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,4 +197,7 @@
             <point key="canvasLocation" x="-1219" y="-19"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="04F-PF-YHy"/>
+    </inferredMetricsTieBreakers>
 </document>
