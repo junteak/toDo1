@@ -131,9 +131,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6j-HQ-y0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="-19"/>
+            <point key="canvasLocation" x="134.78260869565219" y="-19.419642857142858"/>
         </scene>
-        <!--Add Controller-->
+        <!--追加画面-->
         <scene sceneID="qad-LO-hjI">
             <objects>
                 <viewController id="qI8-2a-BW4" customClass="AddController" customModule="toDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,6 +170,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="25X-XZ-sht"/>
                     </view>
+                    <navigationItem key="navigationItem" title="追加画面" id="xAa-Cl-ltk"/>
                     <connections>
                         <outlet property="textField" destination="AuB-ef-5ae" id="CUP-nv-Jw5"/>
                     </connections>
