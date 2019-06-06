@@ -8,23 +8,22 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
-// 追加画面でへ追加した単語をすぐ反映するリロード
+// 追加画面で追加した単語を即座にリロードして反映させる
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
 
-
+//セクションの数を決める
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+ 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // "変数名.count"で要素数を取得できます。
         return word.count
         
-    }
-    
-
-//セクションの数を決める
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
     }
     
 // 各行のセルを表示する処理
@@ -34,7 +33,6 @@ class TableViewController: UITableViewController {
 //"NameCell"の部分はStoryboardでセルに設定したIdentifierを指定
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath)
-
 // セルのラベルにwordの要素を表示するように指定
 //cell.textLabel はStyleをBasicに指定したセルのラベル
         cell.textLabel?.text = word[indexPath.row]
