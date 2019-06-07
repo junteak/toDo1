@@ -11,12 +11,14 @@ class AddController2: UIViewController {
 //テキストフィールドの設定
     @IBOutlet weak var textField2: UITextField!
     
-    //追加ボタンの設定
+    //ボタンが押された時
     @IBAction func add2(_ sender: Any) {
     
         word2.append(textField2.text!)
         textField2.text = ""
         UserDefaults.standard.set( word2, forKey: "TodoList2" )
+        //元の画面に戻る
+        _ = self.navigationController?.popViewController(animated: true)
         
     }
     

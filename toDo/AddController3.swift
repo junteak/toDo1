@@ -17,6 +17,7 @@ class AddController3: UIViewController {
         textField3.text = ""
         
         UserDefaults.standard.set( word3, forKey: "TodoList3" )
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
 }

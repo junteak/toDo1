@@ -11,7 +11,7 @@ class AddController: UIViewController {
     }
     //テキストフィールドの設定
     @IBOutlet weak var textField: UITextField!
-    //追加ボタンの設定
+    //ボタンがお押された時
     @IBAction func add(_ sender: Any) {
         //変数に入力内容を入れる
         word.append(textField.text!)
@@ -19,6 +19,9 @@ class AddController: UIViewController {
         textField.text = ""
         //変数の中身をUDに追加
         UserDefaults.standard.set( word, forKey: "TodoList" )
+        //元の画面に戻る
+        _ = self.navigationController?.popViewController(animated: true)
+        
     }
    
 
