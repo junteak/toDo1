@@ -13,7 +13,8 @@ class AddController2: UIViewController {
     
     //ボタンが押された時
     @IBAction func add2(_ sender: Any) {
-    
+//空白を登録しない、式はもし空白がfalseであれば実行
+        if textField2.text!.isEmpty == false {
         word2.append(textField2.text!)
         textField2.text = ""
         UserDefaults.standard.set( word2, forKey: "TodoList2" )
@@ -21,6 +22,6 @@ class AddController2: UIViewController {
         _ = self.navigationController?.popViewController(animated: true)
         
     }
-    
+    }
     
 }

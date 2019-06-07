@@ -63,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLk-qk-Qkf">
-                                <rect key="frame" x="82" y="116" width="250" height="40"/>
+                                <rect key="frame" x="82" y="143" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="2n9-mx-XVc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="MWP-z9-Dgq"/>
@@ -75,7 +75,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-Z4-an4">
-                                <rect key="frame" x="149" y="226" width="116" height="66"/>
+                                <rect key="frame" x="149" y="253" width="116" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="jdl-2L-xbi"/>
                                     <constraint firstAttribute="width" constant="116" id="pA9-ps-y6n"/>
@@ -85,12 +85,12 @@
                                 <connections>
                                     <action selector="add2:" destination="sWT-Tl-qGh" eventType="touchUpInside" id="Sb8-E3-FJ7"/>
                                     <action selector="add:" destination="qI8-2a-BW4" eventType="touchUpInside" id="4lz-XT-MhL"/>
-                                    <segue destination="Oy4-PQ-ux9" kind="show" id="waD-Zf-I9p"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="lLk-qk-Qkf" firstAttribute="top" secondItem="ERs-Ht-xgb" secondAttribute="top" constant="55" id="Da9-Ib-wsW"/>
                             <constraint firstItem="TXI-Z4-an4" firstAttribute="centerX" secondItem="eCV-y2-ySl" secondAttribute="centerX" id="GbM-rH-JUb"/>
                             <constraint firstItem="TXI-Z4-an4" firstAttribute="top" secondItem="lLk-qk-Qkf" secondAttribute="bottom" constant="70" id="JSR-Zg-w4u"/>
                             <constraint firstItem="lLk-qk-Qkf" firstAttribute="centerX" secondItem="eCV-y2-ySl" secondAttribute="centerX" id="OK2-7t-fD8"/>
@@ -244,7 +244,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8x-zB-syu">
-                                <rect key="frame" x="82" y="99" width="250" height="40"/>
+                                <rect key="frame" x="82" y="143" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sq0-zU-ahb"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="tyw-jo-tP5"/>
@@ -254,7 +254,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glU-hI-3wj">
-                                <rect key="frame" x="149" y="209" width="116" height="42"/>
+                                <rect key="frame" x="149" y="253" width="116" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="WYd-vy-w7f"/>
                                     <constraint firstAttribute="height" constant="42" id="fYf-DZ-2JQ"/>
@@ -264,7 +264,6 @@
                                 <connections>
                                     <action selector="add3:" destination="Bfu-Pv-dCv" eventType="touchUpInside" id="X30-zr-Bs1"/>
                                     <action selector="add:" destination="qI8-2a-BW4" eventType="touchUpInside" id="eSo-WT-m3Z"/>
-                                    <segue destination="ll9-zR-Raj" kind="show" id="hM5-B3-L92"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -338,7 +337,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuB-ef-5ae">
-                                <rect key="frame" x="82" y="99" width="250" height="40"/>
+                                <rect key="frame" x="82" y="143" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BYA-P5-4zC"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="PiZ-xJ-aVq"/>
@@ -348,7 +347,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NH-pG-Ne3">
-                                <rect key="frame" x="149" y="209" width="116" height="42"/>
+                                <rect key="frame" x="149" y="253" width="116" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="cMd-C1-649"/>
                                     <constraint firstAttribute="height" constant="66" id="sop-4o-6f8"/>
@@ -357,7 +356,6 @@
                                 <state key="normal" title="追加"/>
                                 <connections>
                                     <action selector="add:" destination="qI8-2a-BW4" eventType="touchUpInside" id="XU5-rw-lIS"/>
-                                    <segue destination="9ns-qS-dr9" kind="show" id="04F-PF-YHy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -397,9 +395,4 @@
             <point key="canvasLocation" x="-1219" y="-19"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="04F-PF-YHy"/>
-        <segue reference="hM5-B3-L92"/>
-        <segue reference="waD-Zf-I9p"/>
-    </inferredMetricsTieBreakers>
 </document>

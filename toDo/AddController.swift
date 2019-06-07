@@ -13,6 +13,8 @@ class AddController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     //ボタンがお押された時
     @IBAction func add(_ sender: Any) {
+    //空白を登録しない、式はもし空白がfalseであれば実行
+        if textField.text!.isEmpty == false {
         //変数に入力内容を入れる
         word.append(textField.text!)
         //追加ボタンを押したらフィールドを空にする
@@ -23,6 +25,6 @@ class AddController: UIViewController {
         _ = self.navigationController?.popViewController(animated: true)
         
     }
-   
+    }
 
 }
